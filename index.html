@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <p id="nome"></p>
+    <p id="timeFutebol"></p>
+    
+    <script>
+    //for
+    for (let i = 5; i <= 10; i++){
+        document.getElementById("nome").innerHTML += " Gisela"
+    }
+    //com texo
+     let nome = prompt("Digite um nome");
+     while (nome == "Gisela") {
+        document.getElementById("nome").innerHTML += " Gisela text"
+        nome = prompt("Digite um nome");
+        
+     }
+//do while
+  let timeFutebol  = prompt("Digite um time de Futebol bom")
+  do {
+    document.getElementById("timeFutebol").innerHTML += timeFutebol
+     timeFutebol = prompt("Digite um time de Futebol bom")
+} 
+ while (timeFutebol == "Palmeiras");
+
+</script>
+
+</body>
+</html>

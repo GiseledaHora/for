@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+
+    <h1>Atividade 4 memória </h1>
+    <p id="numero"></p>
+    <p id="tentativas"></p>
+
+
+
+   <script>
+
+    let jogador1 = (prompt("Digite um número entre 1 e 10:"))
+    let jogador2
+    let tentativas = 0
+
+    while (jogador2 != jogador1) {
+        tentativas++
+        jogador2 =(prompt("Digite um número entre 1 e 10:"));
+        document.getElementById("numero").innerHTML = "O jogador dois acertou o número:" + jogador1  
+        document.getElementById("tentativas").innerHTML = "O jogador dois acertou o número em " + tentativas + " tentativas" 
+    }
+   
+
+</script>
+
+</body>
+</html>
